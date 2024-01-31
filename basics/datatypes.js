@@ -13,4 +13,4 @@
 let state = null;
 console.log(typeof state);
 let city;
-console.log(typeof city)
+console.log(typeof city);

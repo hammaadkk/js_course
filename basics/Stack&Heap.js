@@ -1,37 +1,34 @@
-// Stack
+//stack 
 
-// In stack it basically in the primitive datatypes like Boolean, number string etc 
-
-// and in stack it gives us the copy of a variable not the original variable so due to which the original value doesnot change 
+// stack is actually used with primitive datatypes like string numbers boolean
+// Stack gives us the copy of a value not the orignal thing
 // Example
 
-// let User1Email = "User1@gmail.com";
 
-// let User2Email = User1Email;
-// console.log(User2Email);
-// this gives us User1@gmail.com this output but
+let user1account = "anyuser1@gmail.com";
 
-// User2Email = "Hammaadk123443@gmail.com";
-// console.log(User2Email);    //output Hammaadk123443@gmail.com
-// console.log(User1Email);    //User1@gmail.com
+let user2account = user1account;
 
+user2account="user2@gmail.com";
 
-// Heap 
+console.log(user1account);
+console.log(user2account);
 
-// In heap it is basically in the non primitive datatypes like array, objects and function 
-// and in heap it gives us the original of a variable means reference to the variable and if we change the variable the orignal value will also change 
+// Heap
 
+// Heap us used with non primitive datatypes it is objects arrays functions
+// heap gives us the original value means if we change in the value it orginal value will also change means it give not the copy but reference
 // Example
 
-let User1 = {
-    Email: "user1@gmail.com"
+let User1 ={
+    Email :"user1@gmail.com"
 }
 
-let User2 = User1
+let User2 = User1;
 
-User2.Email = "User2@gmail.com"
+User2 = {
+    Email:"user2@gmailcom"
+}
 
-console.log(User2);
 console.log(User1);
-
-// output for both user1 and user2 will be same 
+console.log(User2);
